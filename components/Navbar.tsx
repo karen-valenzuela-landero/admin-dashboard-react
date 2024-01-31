@@ -6,6 +6,7 @@ import { MenuIcon, ShieldCheckIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Fragment } from "react";
+import { signIn, signOut } from "next-auth/react";
 
 const navigation = [
   { name: "Users", href: "/" },
@@ -87,6 +88,7 @@ export default function Navbar() {
                                 active ? "bg-gray-100" : "",
                                 "flex w-full px-4 py-2 text-sm text-gray-700"
                               )}
+                              onClick={() => signIn("github")}
                             >
                               Sign in
                             </button>
