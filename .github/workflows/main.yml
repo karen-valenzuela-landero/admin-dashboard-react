@@ -42,6 +42,10 @@ jobs:
 
       - name: Next to Github Pages
         uses: ricardobiundo/NextPagesAction@1.0.2
+        with:
+          username: 'karen-valenzuela-landero'
+          reponame: 'admin-dashboard-react'
+          token: ${{ secrets.GITHUB_TOKEN }} 
     
       #- name: Deploy to GitHub Pages
        # uses: JamesIves/github-pages-deploy-action@v4.5.0
