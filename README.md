@@ -1,3 +1,6 @@
+# admin-dashboard-react
+Admin dashboard developed with react
+
 #### ⚡️ Requirements
 
 - Install Node.js as [nodejs.org](https://nodejs.org)
