@@ -1,4 +1,6 @@
-
+import { Card, Text, Title } from "@tremor/react";
+import Search from "@/components/Search";
+import UsersTable from "@/components/UsersTable";
 
 type Props = {
   searchParams: {
@@ -20,5 +22,14 @@ export default async function Home({ searchParams }: Props) {
       },
     },
   });
-  return <main>home</main>;
+  return (
+    <main className="p-4 md:p-10 mx-auto max-w-7xl">
+      <Title>Users</Title>
+      <Text>A table of users retrieved from our Postgres database.</Text>
+      <Search />
+      <Card className="mt-6">
+        <UsersTable users={users} />
+      </Card>
+    </main>
+  );
 }
