@@ -5,9 +5,13 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
+        loader: 'akamai',
+        path: '',
       },
     ],
   },
+  assetPrefix: './',
 };
 
-module.exports = nextConfig;
+/* module.exports = nextConfig;  */
+export default nextConfig;
