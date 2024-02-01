@@ -29,7 +29,10 @@ jobs:
       - name: Build
         run: npm run build #&& npm run export && touch ./out/.nojekyll
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
-        with:
-          folder: build # The folder the action will deploy to
+      - name: Next to Github Pages
+        uses: ricardobiundo/NextPagesAction@1.0.2
+    
+      #- name: Deploy to GitHub Pages
+       # uses: JamesIves/github-pages-deploy-action@v4.5.0
+       # with:
+        #  folder: build # The folder the action will deploy to

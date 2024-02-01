@@ -1,7 +1,7 @@
 {
   "name": "nextjs40-admin-dashboard-start",
   "version": "0.1.0",
-  "homepage": "https://karen-valenzuela-landero.github.io/",
+  "homepage": "https://karen-valenzuela-landero.github.io/admin-dashboard-react",
   "private": true,
   "scripts": {
     "dev": "next dev",
